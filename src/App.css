@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+html {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.sunny {
+  background-image: linear-gradient(#ebb022, #ed7300);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.unit {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-link {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-tabs__tab-list {
+  margin-bottom:0px;
+  padding: 0.25rem 0.75rem;
+}
+
+.react-tabs__tab {
+  display: none;
+  list-style: none;
+  color: snow;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+
+.react-tabs__tab--selected {
+  display: inline-block;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.homeContent {
+  padding-top: 40px;
+}
+
+.indicator {
+  padding-left: 0.75rem;
+}
+
+.indicator > span {
+  padding-right: 0.5px;
+}
+
+.indicatorIcon path{
+  fill: snow;
+  transform: scale(0.25);
+}
+
+#ttemp {
+  font-size: 5.4em;
+}
+
+.high-low span {
+  font-size:0.9em;
+  font-weight: bold;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.muted {
+  color:#e6e6e6ad;
+}
+
+#condition {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+#topSummary {
+  margin-left: 0px;
+}
+
+#headerImage {
+  position: fixed;
+  top:0px;
+  transform:scale(0.4);
+}
+
+hr {
+  border-top-width: 1px;
+  border-top-color:#e6e6e678;
 }
