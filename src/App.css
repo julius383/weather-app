@@ -71,7 +71,7 @@ body {
   font-size: 5.4em;
 }
 
-.high-low span {
+.high-low p {
   font-size:0.9em;
   font-weight: bold;
 }
@@ -87,6 +87,7 @@ body {
 #condition {
   font-size: 1.2em;
   margin-bottom: 5px;
+  white-space:nowrap;
 }
 
 #topSummary {
@@ -94,12 +95,85 @@ body {
 }
 
 #headerImage {
-  position: fixed;
-  top:0px;
-  transform:scale(0.4);
+  position: absolute;
+  right:-80%;
+  width: initial;
 }
 
 hr {
   border-top-width: 1px;
   border-top-color:#e6e6e678;
+}
+
+.hhh {
+  padding-left:0.75rem;
+}
+
+#weekTemp {
+  scrollbar-width: none;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+#dailyTemp {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+#weekTemp::-webkit-scrollbar {
+  display: none;
+}
+
+#dailyTemp {
+  font-size: 1.2em;
+}
+
+#dailyTemp .row *:first-child {
+  padding-left: 0px;
+}
+
+#weekTemp tr th:first-child{
+  padding-left: 0px;
+}
+
+#weekTemp td {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#dailyTemp .humidity {
+  font-size: 0.8em;
+  color:#e6e6e678;
+}
+
+#dailyTemp td path {
+  color:#e6e6e678;
+}
+
+#weekTemp th {
+  padding-right: 2rem;
+  color:#e6e6e678;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+#conditionSummary {
+  padding-left:0.75rem;
+  padding-top: 40px;
+}
+
+#condition-bg {
+  max-width: none;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+}
+
+#conditionSummary .row {
+  font-size: 1.6em;
+}
+
+#conditionSummary .heading {
+  color:#e6e6e678;
+  font-size:1em;
 }

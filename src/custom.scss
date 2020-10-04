@@ -1,0 +1,22 @@
+
+$day-start: #ebb022;
+$day-end: #ed7300;
+$night-start: #93b5df;
+$night-end: #2f52a6;
+
+
+.daytime {
+  background-image: linear-gradient($day-start, $day-end);
+}
+
+.daytime-reverse {
+  background-image: linear-gradient($day-end, $day-start);
+}
+
+.nighttime {
+  background-image: linear-gradient($night-start, $night-end);
+}
+
+.nighttime-reverse {
+  background-image: linear-gradient($night-end, $night-start);
+}
