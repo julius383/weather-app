@@ -24,9 +24,12 @@ $gray:#e6e6e678;
   background-image: linear-gradient($night-end, $night-start);
 }
 
-
 .nav-link {
   color: $white;
+}
+
+.loading {
+  height: 100vh;
 }
 
 html {

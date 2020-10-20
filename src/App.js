@@ -2,8 +2,7 @@ import React from "react";
 import { Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import moment from "moment-timezone";
-import ReactLoading from "react-loading";
-import "./custom.scss";
+import "./App.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faPlus, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
@@ -11,6 +10,7 @@ import { createBrowserHistory } from "history";
 import _ from "lodash";
 import AppContext from "./AppContext";
 import { AppProvider } from "./AppContext";
+import  MyLoader from "./MyLoader";
 
 const history = createBrowserHistory();
 
@@ -228,7 +228,9 @@ class CityWeather extends React.Component {
         </React.Fragment>
       );
     } else {
-      return <ReactLoading type={"spin"} height={"50%"} width={"30%"} />;
+      return ( 
+        <MyLoader />
+      );
     }
   }
 }
