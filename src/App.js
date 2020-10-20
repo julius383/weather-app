@@ -3,7 +3,6 @@ import { Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import moment from "moment-timezone";
 import ReactLoading from "react-loading";
-import "./App.css";
 import "./custom.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faPlus, faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -380,7 +379,7 @@ class DailySummary extends React.Component {
 class TodaySummary extends React.Component {
   render() {
     return (
-      <div className="container pt-3 hhh">
+      <div className="container pt-3 left-edge">
         <div className="row" id="topSummary">
           <div className="col-8">
             <div className="row">

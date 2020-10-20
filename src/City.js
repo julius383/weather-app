@@ -84,7 +84,6 @@ class City {
       this.weather.min = _.min(temps);
       this.weather.icon = ICONS[response.data.current.weather[0].icon];
       this.weather.hourly = this.formatHourly(response.data);
-      console.dir(response.data);
       this.weather.daily = this.formatDaily(response.data);
       this.weather.timezone = response.data.timezone;
       this.weather.sunset = response.data.current.sunset;
